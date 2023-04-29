@@ -8,6 +8,136 @@
   border: 3px solid #444;
 }
 
+/* Modal container */
+.modal {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Modal content */
+.modal-content {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Modal header */
+.modal-header {
+  border-bottom: 1px solid #dee2e6;
+  padding: 1rem;
+}
+
+/* Modal title */
+.modal-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #212529;
+}
+
+/* Close button */
+.btn-close {
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: #6c757d;
+}
+
+/* Modal body */
+.modal-body {
+  padding: 1rem;
+}
+
+/* File input */
+.form-control-file {
+  margin-top: 0.5rem;
+}
+
+/* Modal footer */
+.modal-footer {
+  border-top: 1px solid #dee2e6;
+  padding: 1rem;
+}
+
+/* Button styles */
+.btn {
+  border-radius: 4px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: #ffffff;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+  color: #ffffff;
+}
+
+.btn-primary {
+  background-color: #0d6efd;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: #0b5ed7;
+  color: #ffffff;
+}
+
+/* Close button */
+.btn-close {
+  background-color: transparent;
+  border: none;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+}
+
+/* Close icon */
+.close-icon {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #6c757d;
+}
+
+.close-icon::before,
+.close-icon::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #6c757d;
+}
+
+.close-icon::before {
+  transform: rotate(45deg);
+}
+
+.close-icon::after {
+  transform: rotate(-45deg);
+}
+
+
+.modal-dialog {
+  position: fixed;
+  z-index: 9999;
+  /* Make sure this value is higher than the other elements */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Add a semi-transparent black background */
+  backdrop-filter: blur(10px)
+}
+
+.modal-content {
+  z-index: 10000;
+}
+
 /* Reset some default styling */
 .gjs-cv-canvas {
   top: 0;
